@@ -1,32 +1,22 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+  double charge = 0.00;
+  int numChars = 8;
+  string color = "gold";
+  string woodType = "oak";
+  if(numChars > 5){
+      charge += (numChars - 5) * 4;
+  }
+  if(woodType == "oak"){
+      charge += 20;
+  }
+  if(color == "gold"){
+      charge += 15;
+  }
+  charge += 35;
+  cout << "The charge for this sign is $" << charge << endl;
+  return 0;
+}
